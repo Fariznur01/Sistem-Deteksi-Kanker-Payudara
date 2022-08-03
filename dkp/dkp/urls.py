@@ -12,6 +12,7 @@ urlpatterns = [
     path('dashboard', views.dashboard, name='dashboard'),
     path('logout_user', views.logout_user, name='logout_user'),
 
+
     path('datapasien/',include(('datapasien.urls','datapasien'),namespace='datapasien')),
 
     path('datapetugas/',include(('datapetugas.urls','datapetugas'),namespace='datapetugas')),

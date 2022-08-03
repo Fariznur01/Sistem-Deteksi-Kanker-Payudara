@@ -115,7 +115,7 @@ def update(request, update_id):
     }
     return render(request, 'datapasien/tambah.html', context)
 
-
+@login_required(login_url=settings.LOGIN_URL)
 def hapus(request, delete_id):
     Basis.objects.filter(id=delete_id).delete()
     messages.success(request, "Data Berhasil di Hapus")

@@ -1,6 +1,7 @@
 from import_export import resources
 from .models import Basis
 
+#untuk melakukan eksport data
 class PasienResource(resources.ModelResource):
     class Meta:
         model = Basis

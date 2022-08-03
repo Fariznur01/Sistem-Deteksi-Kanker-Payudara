@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 20 Jun 2022 pada 02.55
+-- Waktu pembuatan: 26 Jun 2022 pada 04.59
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 8.0.14
 
@@ -128,9 +128,10 @@ CREATE TABLE `auth_user` (
 --
 
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
-(8, 'pbkdf2_sha256$260000$qHvSTkbEXhR4St1sEKqVoj$tourSvxjP3TDMeUQFeF8OhdlnE/aXBVl9xxXfV3X9dA=', '2022-06-20 00:45:26.488196', 1, 'admin', '', '', 'fariz@gmail.com', 1, 1, '2022-02-09 01:23:54.556702'),
-(10, 'pbkdf2_sha256$260000$aYjVPTsXEfFUePaU22Lnws$I17MNLJnDZJ9FxpWW3sJHDSAnVK2mE66X3AA7UveSl4=', '2022-06-08 01:14:21.483750', 0, 'Test00', '', '', 'fariznurfadillah01@gmail.com', 0, 1, '2022-06-08 01:14:05.019938'),
-(12, 'pbkdf2_sha256$260000$lrkxmBwk3B5uE3Uow8T4J5$gMlLnU//ftTT9cDoxzlbdGonRVusFrMmIAnwzHlXy2k=', '2022-06-20 00:40:48.545182', 0, 'Test01', '', '', 'fariznurfadillah01@gmail.com', 0, 1, '2022-06-15 01:35:52.644157');
+(8, 'pbkdf2_sha256$260000$qHvSTkbEXhR4St1sEKqVoj$tourSvxjP3TDMeUQFeF8OhdlnE/aXBVl9xxXfV3X9dA=', '2022-06-26 02:53:41.057333', 1, 'admin', '', '', 'fariz@gmail.com', 1, 1, '2022-02-09 01:23:54.556702'),
+(13, 'pbkdf2_sha256$260000$VWNUMzPb4hJieEMOOB3bpv$qzBS4gVs7qk09237+MqXA/gknO2BjDInH2ThvxlAAZg=', '2022-06-26 02:58:49.635583', 1, 'admin2', '', '', '111201811018@mhs.dinus.ac.id', 1, 1, '2022-06-20 01:01:30.284080'),
+(14, 'pbkdf2_sha256$260000$xBVXcXfQFtLH1pb6h2pzp9$MHY05VlvoGqLuTgVZUhBAV3gRNpt2+GVkBt/nLgk6+0=', '2022-06-20 01:45:01.659636', 0, 'Test01', '', '', 'fariznurfadillah01@gmail.com', 0, 1, '2022-06-20 01:43:23.553714'),
+(15, 'pbkdf2_sha256$260000$32V1SZa1DtXhBx36fMQZLg$0rteWvi/KsZgvmTfNLn8VrzTkcYkWX83wey9Bv2cN24=', '2022-06-26 02:56:37.946333', 0, 'Fariz_11018', '', '', '111201811018@mhs.dinus.ac.id', 0, 1, '2022-06-26 02:54:37.379327');
 
 -- --------------------------------------------------------
 
@@ -204,7 +205,7 @@ CREATE TABLE `datapasien_basis` (
 --
 
 INSERT INTO `datapasien_basis` (`id`, `Nama_Pasien`, `Tgl_Periksa`, `Diagnosis`, `Radius_mean`, `Texture_mean`, `Perimeter_mean`, `Area_mean`, `Smoothness_mean`, `Compactness_mean`, `Concavity_mean`, `Concave_points_mean`, `Symmetry_mean`, `Fractal_dimension_mean`, `Radius_se`, `Texture_se`, `Perimeter_se`, `Area_se`, `Smoothness_se`, `Compactness_se`, `Concavity_se`, `Concave_points_se`, `Symmetry_se`, `Fractal_dimension_se`, `Radius_worst`, `Texture_worst`, `Perimeter_worst`, `Area_worst`, `Smoothness_worst`, `Compactness_worst`, `Concavity_worst`, `Concave_points_worst`, `Symmetry_worst`, `Fractal_dimension_worst`) VALUES
-(2, 'Test01', '2021-10-26', 'M', '17.99', '10.38', '122.8', '1001', '1.184', '2.776', '3.001', '1.471', '2.419', '7.871', '1.095', '9.053', '8.589', '153.4', '6.399', '4.904', '5.373', '1.587', '3.003', '6.193', '25.38', '17.33', '184.6', '2019', '1.622', '6.656', '7.119', '2.654', '4.601', '1.189'),
+(2, 'Test01', '2022-10-26', 'M', '17.99', '10.38', '122.8', '1001', '1.184', '2.776', '3.001', '1.471', '2.419', '7.871', '1.095', '9.053', '8.589', '153.4', '6.399', '4.904', '5.373', '1.587', '3.003', '6.193', '25.38', '17.33', '184.6', '2019', '1.622', '6.656', '7.119', '2.654', '4.601', '1.189'),
 (14, 'Test02', '2021-10-26', 'M', '20.57', '17.77', '132.9', '1326', '8.474', '7.864', '869', '7.017', '1.812', '5.667', '5.435', '7.339', '3.398', '74.08', '5.225', '1.308', '186', '134', '1.389', '3.532', '24.99', '23.41', '158.8', '1956', '1.238', '1.866', '2.416', '186', '275', '8.902'),
 (15, 'Test03', '2021-10-26', 'M', '19.69', '21.25', '130', '1203', '1.096', '1.599', '1.974', '1.279', '2.069', '5.999', '7.456', '7.869', '4.585', '94.03', '615', '4.006', '3.832', '2.058', '225', '4.571', '23.57', '25.53', '152.5', '1709', '1.444', '4.245', '4.504', '243', '3.613', '8.758'),
 (16, 'Test04', '2021-10-26', 'M', '11.42', '20.38', '77.58', '386.1', '1.425', '2.839', '2.414', '1.052', '2.597', '9.744', '4.956', '1.156', '3.445', '27.23', '911', '7.458', '5.661', '1.867', '5.963', '9.208', '14.91', '26.5', '98.87', '567.7', '2.098', '8.663', '6.869', '2.575', '6.638', '173'),
@@ -897,13 +898,6 @@ CREATE TABLE `django_session` (
   `expire_date` datetime(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data untuk tabel `django_session`
---
-
-INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES
-('x1n1mov3kenhzqgjv3qggpp8tcs7wlcu', '.eJxVjDsOwjAQBe_iGln-fyjpOYNl765xADlSnFSIu0OkFNC-mXkvlvK2trQNWtKE7MwCO_1uJcOD-g7wnvtt5jD3dZkK3xV-0MGvM9Lzcrh_By2P9q2lqOAyiCrJRuGjR5kBYo1VGNQVAJU3RnuKIgRUWgen0BNSUWitC-z9Afc4OBw:1o35Xi:fX3LTRItP3EHEFfNuEJGKGd-asnm_IbB90VcmxxBIR8', '2022-07-04 00:45:26.497147');
-
 -- --------------------------------------------------------
 
 --
@@ -952,10 +946,6 @@ CREATE TABLE `dtc_data` (
 --
 
 INSERT INTO `dtc_data` (`id`, `name`, `date`, `Radius_mean`, `Texture_mean`, `Perimeter_mean`, `Area_mean`, `Smoothness_mean`, `Compactness_mean`, `Concavity_mean`, `Concave_points_mean`, `Symmetry_mean`, `Fractal_dimension_mean`, `Radius_se`, `Texture_se`, `Perimeter_se`, `Area_se`, `Smoothness_se`, `Compactness_se`, `Concavity_se`, `Concave_points_se`, `Symmetry_se`, `Fractal_dimension_se`, `Radius_worst`, `Texture_worst`, `Perimeter_worst`, `Area_worst`, `Smoothness_worst`, `Compactness_worst`, `Concavity_worst`, `Concave_points_worst`, `Symmetry_worst`, `Fractal_dimension_worst`, `predictions`) VALUES
-(4, 'Test01', '2021-11-15 02:22:33.135225', '-0.202463', '-1.176733', '-0.234696', '-0.293867', '-0.214489', '-0.015343', '-0.237978', '-0.210627', '-0.336021', '-0.327811', '-0.335852', '-0.088083', '-0.558670', '-0.556138', '-0.309972', '1.092886', '-0.267007', '-0.321653', '2.912824', '-0.101758', '-0.289609', '-1.059718', '-0.274551', '-0.368574', '1.052423', '-0.295403', '1.314563', '-0.257982', '-0.319892', '-0.182423', '[\'B\']'),
-(5, 'Test02', '2022-04-04 22:40:14.464872', '20.57', '17.77', '132.9', '1326', '0.08474', '0.07864', '0.0869', '0.07017', '0.1812', '0.05667', '0.5435', '0.7339', '1.778', '23.13', '8.462', '0.01308', '2.945', '1.112', '198', '0.003532', '24.99', '23.41', '158.8', '284.4', '1.312', '0.1866', '0.2416', '0.186', '2.383', '6.783', '[\'M\']'),
-(7, 'Test04', '2022-05-29 09:28:13.350952', '-0', '-1', '-0', '-0', '0', '-0', '-0', '-0', '-0', '0', '-0', '-0', '-0', '-0', '-0', '0', '-0', '-0', '0', '-0', '-0', '-0', '-1', '-0', '-0', '0', '-0', '-0', '0', '0', '[\'B\']'),
-(8, 'Test06', '2022-05-29 09:30:35.025037', '-0', '-0', '-0', '-0', '0', '0', '-0', '-0', '0', '0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '0', '-0', '[\'B\']'),
 (13, 'Test01', '2022-06-14 00:11:49.945371', '-0.29', '-1.15', '-0.19', '-0.25', '0.10', '-0.44', '-0.28', '-0.03', '0.27', '-0.73', '-0.18', '-0.95', '-0.28', '-0.19', '0.47', '-0.61', '-0.27', '-0.22', '-0.09', '-0.57', '-0.18', '-1.05', '-0.23', '-0.30', '0.51', '-0.04', '-0.06', '0.22', '0.12', '-0.63', '[\'B\']'),
 (15, 'Test02', '2022-06-15 01:10:46.420868', '-0.28', '-0.35', '1.69', '1.91', '-0.83', '-0.49', '-0.02', '0.55', '0.00', '-0.87', '-0.18', '-0.95', '0.48', '-0.16', '-0.61', '-0.69', '-0.44', '0.26', '-0.81', '-0.10', '-0.18', '-0.37', '1.54', '1.89', '-0.38', '-0.04', '-0.06', '1.09', '-0.24', '0.28', '[\'M\']'),
 (16, 'Test03', '2022-06-15 01:35:13.209068', '-0.29', '-0.83', '-0.26', '-0.38', '0.79', '0.43', '-0.54', '-0.46', '0.57', '0.75', '-0.18', '-0.95', '-0.66', '-0.20', '-0.98', '-0.36', '-0.49', '-0.86', '-0.46', '-0.52', '-0.18', '-0.84', '-0.33', '-0.44', '-0.05', '-0.04', '-0.06', '-0.64', '0.46', '-0.12', '[\'B\']'),
@@ -1010,10 +1000,6 @@ CREATE TABLE `knn_data` (
 --
 
 INSERT INTO `knn_data` (`id`, `name`, `date`, `Radius_mean`, `Texture_mean`, `Perimeter_mean`, `Area_mean`, `Smoothness_mean`, `Compactness_mean`, `Concavity_mean`, `Concave_points_mean`, `Symmetry_mean`, `Fractal_dimension_mean`, `Radius_se`, `Texture_se`, `Perimeter_se`, `Area_se`, `Smoothness_se`, `Compactness_se`, `Concavity_se`, `Concave_points_se`, `Symmetry_se`, `Fractal_dimension_se`, `Radius_worst`, `Texture_worst`, `Perimeter_worst`, `Area_worst`, `Smoothness_worst`, `Compactness_worst`, `Concavity_worst`, `Concave_points_worst`, `Symmetry_worst`, `Fractal_dimension_worst`, `predictions`) VALUES
-(4, 'Test02', '2021-12-15 01:32:33.638911', '0.916381', '0.872476', '0.783889', '0.791260', '-0.232465', '5.111379', '-0.268168', '-0.270156', '-0.316247', '-0.324363', '-0.272720', '-0.189155', '-0.079023', '0.089950', '-0.279213', '-0.256476', '-0.251744', '-0.227286', '-0.313873', '-0.278980', '0.743073', '0.946040', '0.628396', '0.597007', '1.486958', '-0.280313', '-0.290039', '-0.235099', '-0.335973', '-0.258959', '[\'B\']'),
-(6, 'Test04', '2022-02-09 02:46:05.282719', '20.57', '17.77', '132.9', '1326', '0.08474', '0.07864', '0.0869', '1.471', '0.1812', '0.05667', '0.5435', '0.7339', '3.398', '74.08', '0.005225', '0.01308', '0.0186', '0.0134', '0.01389', '6.193', '24.99', '23.41', '158.8', '1956', '0.1238', '0.1866', '0.2416', '0.186', '0.275', '0.08902', '[\'M\']'),
-(8, 'Test05', '2022-05-29 09:24:41.204685', '-0', '-1', '-0', '-0', '0', '-0', '-0', '-0', '-0', '0', '-0', '-0', '-0', '-0', '-0', '0', '-0', '-0', '0', '-0', '-0', '-0', '-1', '-0', '-0', '-0', '-0', '-0', '0', '0', '[\'B\']'),
-(9, 'Test06', '2022-05-29 09:26:24.932186', '-0', '-0', '-0', '-0', '0', '0', '-0', '-0', '0', '0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '-0', '0', '-0', '[\'B\']'),
 (14, 'Test01', '2022-06-14 00:01:48.716010', '-0.29', '-1.15', '-0.19', '-0.25', '0.10', '-0.44', '-0.28', '-0.03', '0.27', '-0.73', '-0.18', '-0.95', '-0.28', '-0.19', '0.47', '-0.61', '-0.27', '0.22', '-0.09', '-0.57', '-0.18', '-1.05', '-0.23', '-0.30', '0.51', '-0.04', '-0.06', '0.22', '0.12', '-0.63', '[\'B\']'),
 (17, 'Test02', '2022-06-15 01:06:15.128360', '-0.28', '-0.35', '1.69', '1.91', '-0.83', '-0.49', '-0.02', '0.55', '0.00', '-0.87', '-0.18', '-0.95', '0.48', '-0.16', '-0.61', '-0.69', '-0.44', '0.26', '-0.81', '-0.10', '-0.18', '-0.37', '1.54', '1.89', '-0.38', '-0.04', '-0.06', '01.09', '-0.24', '0.28', '[\'M\']'),
 (18, 'Test03', '2022-06-15 01:32:33.515933', '-0.29', '-0.83', '-0.26', '-0.38', '0.79', '0.43', '-0.54', '-0.46', '0.57', '0.75', '-0.18', '-0.95', '-0.66', '-0.20', '-0.98', '-0.36', '-0.49', '-0.86', '-0.46', '-0.52', '-0.18', '-0.84', '-0.33', '-0.44', '-0.05', '-0.04', '-0.06', '-0.64', '0.46', '-0.12', '[\'B\']'),
@@ -1147,7 +1133,7 @@ ALTER TABLE `auth_permission`
 -- AUTO_INCREMENT untuk tabel `auth_user`
 --
 ALTER TABLE `auth_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT untuk tabel `auth_user_groups`
@@ -1165,7 +1151,7 @@ ALTER TABLE `auth_user_user_permissions`
 -- AUTO_INCREMENT untuk tabel `datatraining_file`
 --
 ALTER TABLE `datatraining_file`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT untuk tabel `django_admin_log`
@@ -1189,13 +1175,13 @@ ALTER TABLE `django_migrations`
 -- AUTO_INCREMENT untuk tabel `dtc_data`
 --
 ALTER TABLE `dtc_data`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT untuk tabel `knn_data`
 --
 ALTER TABLE `knn_data`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
